@@ -11,8 +11,8 @@ import pvporcupine
 from Body.Microphone import MicExecution
 from Body.Speaker import Speak
 
-email_id = 'riddhiarpan2211@gmail.com'
-password = 'ridarp@2211'
+email_id = ''
+password = ''
 
 chrome_options = Options()
 chrome_options.add_argument('--log-level=3')
