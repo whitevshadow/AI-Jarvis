@@ -1,0 +1,28 @@
+import os
+import pygame
+import pyttsx3
+
+voice = "bn-IN-BashkarNeural"
+rate = "-15%"
+
+
+def Speak(data):
+    command1 = f'edge-tts --rate={rate} --voice "{voice}" --text "{data}" --write-media "data.mp3"'
+    print("---------------------------------------------------------------------------------------------")
+
+    os.system(command1)
+    pygame.init()
+    pygame.mixer.init()
+    pygame.mixer.music.load("data.mp3")
+    try:
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+
+    except Exception as e:
+        print(e)
+        print("")
+
+    finally:
+        pygame.mixer.music.stop()
+        pygame.mixer.quit()
