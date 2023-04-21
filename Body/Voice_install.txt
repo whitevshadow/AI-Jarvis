@@ -1,0 +1,3 @@
+Here the File Voice.reg
+Open  & Install 
+Make Changes According to id in Speak Function
