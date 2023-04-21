@@ -1,0 +1,180 @@
+{"intents":
+        [
+          {
+            "tag": "Exit",
+            "patterns":["bye", "goodbye", "later","farewell", "talk to later", "take care","catch you later"],
+            "responses": ["Exit"]
+          },
+          {
+            "tag": "Cur_Time",
+            "patterns":[ "what time is it?", "the time?", "do you have the time?", "could tell me the time?", "is the current time?"],
+            "responses": ["Cur_Time"]
+          },
+          {
+            "tag": "Today_date",
+            "patterns":["what's the date today?", "today's date?", "the date today?", "the date?",
+              "can you tell me today's date?"],
+            "responses": ["Today_date"]
+          },
+          {
+            "tag": "Today_day",
+            "patterns":["todays day?", "Tell me which day it is","what is the day"],
+            "responses": ["Today_day"]
+          },
+          {
+            "tag": "Notepad",
+            "patterns":["create a note", "take a note", "write this down", "make a note", "note this", "note down",
+              "save the note", "remember this", "keep this in mind", "write it down", "note saved", "save it"
+            ],
+            "responses": ["Notepad"]
+          },
+          {
+            "tag": "Speedtest",
+            "patterns":["can you check my internet speed?", "how fast is my internet?", "take a speedspetest?",
+              "do I have a good internet speed?", "how can I check my internet speed?", "what is my internet speed?",
+              "can you test my connection speed?", "check my bandwidth speed", "speedtest please"],
+            "responses": ["Speedtest"]
+          },
+          {
+            "tag": "increase_vol",
+            "patterns":["increase the volume", "turn up the volume", "make it louder", "raise the volume", "volume up",
+              "increase sound", "turn up sound", "louder please", "turn up the music", "increase the audio",
+              "turn up the speaker", "increase the sound level"],
+            "responses": ["increase_vol"]
+          },
+          {
+            "tag": "decrease_vol",
+            "patterns":["can you lower the volume?", "decrease the volume please", "turn down the volume",
+              "make it quieter", "it's too loud"],
+            "responses": ["decrease_vol"]
+          },
+          {
+            "tag": "Shutdown_Device",
+            "patterns":["shutdown my computer", "turn off my computer", "power off my computer", "shutdown my laptop",
+              "turn off my laptop", "power off my laptop", "can you shut down my computer?","Shutdown my pc",
+              "can you turn off my computer?", "can you power off my computer?", "can you shut down my laptop?",
+              "can you turn off my laptop?", "can you power off my laptop?", "please shut down my computer",
+              "please turn off my computer", "please power off my computer", "please shut down my laptop",
+              "please turn off my laptop", "please power off my laptop"],
+            "responses": ["Shutdown_Device"]
+          },
+          {
+            "tag": "Lock",
+            "patterns":["lock computer", "lock pc", "lock laptop", "lock screen", "secure my computer", "secure my pc",
+              "secure my laptop", "protect my computer", "protect my pc", "protect my laptop","I want to lock my pc",
+              "how do I lock my computer?","how do I lock my pc?","how do I lock my laptop?","I want to lock my laptop",
+              "can you lock my computer?","can you lock my pc?","can you lock my laptop?","I want to lock my computer"],
+            "responses": ["Lock"]
+          },
+          {
+            "tag": "Battery_Per",
+            "patterns":["what's my battery level?", "the battery percentage?", "battery level",
+              "what's my current battery percentage?", "can you tell me my battery level?", "battery percentage",
+              "how much battery do I have?", "what's the battery status?", "battery status please", "battery level"],
+            "responses": ["Battery_Per"]
+          },
+          {
+            "tag": "Screen_shot",
+            "patterns":["take a screenshot", "capture the screen", "screenshot please", "can you take a screenshot?",
+              "screenshot now", "grab the screen", "screen grab", "save a screenshot", "record the screen"],
+            "responses": ["Screen_shot"]
+          },
+          {
+            "tag": "My_PC_IP",
+            "patterns":["what is my ip address?", "what's my ip address?", "what is this computer's ip address?",
+              "what's the ip address of this machine?", "can you give me my ip address?"," my device IP address"],
+            "responses": ["MY_PC_IP"]
+          },
+          {
+            "tag": "My_Location",
+            "patterns":["what is my location", "can tell me address?", "current address?",
+              "where am I?", "current location?", "current GPS coordinates?",
+              "street address?", "zip code?"],
+            "responses": ["My_Location"]
+          },
+          {
+            "tag": "News",
+            "patterns":["in the news?", "what's the latest news?",
+              "what the top stories?", "can  give me the news?", "news please", "tell the news update"],
+            "responses": ["News"]
+          },
+          {
+            "tag": "Weather",
+            "patterns":["what's the weather", "what's the temperature outside?", "how's the weather today?",
+              "is it going to rain?", "what's the forecast for today?", "what's the climate like?",
+              "what's the temperature?", "what's the temperature right now?", "what's the humidity?",
+              "what's the wind speed?", "what's the air pressure?", "what's the chance of precipitation?",
+              "what's the UV index?", "what's the visibility?", "what's the weather forecast for tomorrow?",
+              "what's the weather like in [city]?", "what's the temperature in [city]?","give me weather update",
+              "what's the weather forecast for [date]?", "what's the weather like for [activity]?",
+              "what's the weather going to be like later?", "what's the weather going to be like this weekend?"],
+            "responses": ["Weather"]
+          },
+          {
+            "tag": "Music",
+            "patterns":[ "play some music on Spotify", "play songs on Spotify", "can you play some {genre} music on Spotify", "play some music", "play something from {year} on Spotify",
+              "shuffle my Spotify playlist", "start a Spotify radio station based on {artist}","play song",
+              "play something by {artist} on Spotify", "what's currently playing on Spotify?"],
+            "responses": ["Music"]
+          },
+          {
+            "tag": "Self_Call",
+            "patterns":["where's my phone?", "can you help me find my phone?", "have you seen my phone?",
+              "my phone is missing", "I lost my phone", "can you ring my phone?", "make my phone ring",
+              "find my phone", "locate my phone", "help me locate my phone"],
+            "responses": ["Self_Call"]
+          },
+          {
+            "tag": "Phone_Unlock",
+            "patterns":["unlock my phone", "can you unlock my phone?", "my phone is locked, can you help?",
+              "how can I unlock my phone?", "unlock phone please"],
+            "responses": ["Phone_Unlock"]
+          },
+          {
+            "tag": "Ans_call",
+            "patterns":["Answer the call","Pick up the call","Pick a phone call","Answer the phone", "take the call",
+              "Answer the receiving call","answer the call", "pick up the phone", "accept the call"
+            ],
+            "responses": ["Ans_call"]
+          },
+
+          {
+            "tag": "Whatsapp_msg",
+            "patterns":["send text message to","send whatsapp message to", "send message to","write a message to",
+              "write whatsapp message","Can you send a whatsapp message?","I need you to send a whatsapp message",
+              "Please send a whatsapp message.","Could you send a whatsapp message?","Will you send a whatsapp message?",
+              "Would you be able to send a whatsapp message?","I would like you to send a whatsapp message.",
+              "send WhatsApp message to"],
+            "responses": ["Whatsapp_msg"]
+          },
+          {
+            "tag": "Insta_Profile",
+            "patterns":[ "Check Instagram profile of","Show the profile image of", "Show the followers of",
+              "show me the number of insta following","Instagram profile details","Instagram Profile updates",
+              "Whats Instagram profile Bio"],
+            "responses": ["Insta_Profile"]
+          },
+          {
+            "tag": "Phone_Call",
+            "patterns":["Can you make a voice call?","Will you make a voice call?","Could you make a voice call?",
+              "Will you make a voice call?","Please make a voice call.","Make a call to","Call to","Make a phone call",
+              "Phone call to"],
+            "responses": ["Phone_Call"]
+          },
+          {
+            "tag": "Video_Call",
+            "patterns":[" Can you please make a video call?","I need to make a video call.",
+              "Can you help me make a video call? ","I want to make a video call.","Can you make a video call for me?",
+              "I would like to make a video call.","Make a video call to"],
+            "responses": ["Video_Call"]
+          },
+          {
+            "tag": "Open_app",
+            "patterns":["Can you please open the app?","I need you to open the app.","Will you open the app?", "Could you open the app?",
+              "Can you open app","Can you please launch the website?","I need the website to be launched.",
+              "Can you launch the website for me?","Would you mind launching the website?","Open app","Launch website",
+              "Would it be possible for you to launch the website?"],
+            "responses": ["Open_app"]
+          }
+        ]
+}
