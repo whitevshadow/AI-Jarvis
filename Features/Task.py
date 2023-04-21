@@ -19,10 +19,10 @@ from Features.Web_Scraping.Thoughts import thought_day
 from Features.Web_Scraping.Weather import get_Weather
 
 Contact = {
-    "harshal": "9172691064",
-    "ajay": "9823513202",
-    "goku": "9021144118",
-    "my": "9604304414"
+    "harshal": "",
+    "ajay": "",
+    "goku": "",
+    "my": ""
 }
 
 
@@ -42,8 +42,9 @@ def random_stuff(sentences):
                    "user_id": "420"}
 
     headers = {
-        "Authorization": "HCjo5Y4B4RDD",
-        "X-RapidAPI-Key": "0477f85d5cmsh94bbbb1f4cc64a5p109fbbjsncdd6553ee50c",
+        # Use https://rapidapi.com/hub/ for below keys
+        "Authorization": "",
+        "X-RapidAPI-Key": "",
         "X-RapidAPI-Host": "random-stuff-api.p.rapidapi.com"
     }
 
