@@ -21,10 +21,5 @@ def get_ip(my_mac=''):
 
 
 def Connect():
-    ip1 = get_ip('02-37-cc-6e-21-aa')
+    ip1 = get_ip('02-37-cc-6e-21-aa') # Call get_ip Function and Find Your Phone IP address with has "02-37-cc-6e-21-aa" this kind of Address
     os.system(f'adb connect {ip1}')
-    ip2 = get_ip('fa-ef-3b-99-67-fa')
-    os.system(f"adb connect {ip2}")
-    ip3 = get_ip('72-ad-6b-4b-83-b5')
-    os.system(f"adb connect {ip3}")
-
