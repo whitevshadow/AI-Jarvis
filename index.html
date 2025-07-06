@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S - Enhanced AI Assistant</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Background Animation -->
+        <div class="background-animation">
+            <div class="circuit-lines"></div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Main Interface -->
+        <div class="main-container">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo-container">
+                    <div class="arc-reactor">
+                        <div class="core"></div>
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                    <h1 class="title">J.A.R.V.I.S</h1>
+                </div>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Voice Visualizer -->
+                <div class="voice-visualizer">
+                    <div class="wave-container">
+                        <div class="wave wave-1"></div>
+                        <div class="wave wave-2"></div>
+                        <div class="wave wave-3"></div>
+                        <div class="wave wave-4"></div>
+                        <div class="wave wave-5"></div>
+                    </div>
+                    <div class="listening-indicator">
+                        <span class="listening-text">Listening...</span>
+                    </div>
+                </div>
+
+                <!-- Chat Interface -->
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message jarvis-message">
+                            <div class="message-avatar">
+                                <div class="avatar-icon">J</div>
+                            </div>
+                            <div class="message-content">
+                                <p>Good day, Sir. J.A.R.V.I.S is online and ready to assist you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <div class="input-wrapper">
+                            <input type="text" id="chatInput" placeholder="Type your command or speak..." class="chat-input">
+                            <button id="voiceBtn" class="voice-button">
+                                <svg class="mic-icon" viewBox="0 0 24 24">
+                                    <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                                    <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                                </svg>
+                            </button>
+                            <button id="sendBtn" class="send-button">
+                                <svg class="send-icon" viewBox="0 0 24 24">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Panel -->
+                <div class="control-panel">
+                    <div class="control-section">
+                        <h3>System Controls</h3>
+                        <div class="control-buttons">
+                            <button class="control-btn" data-action="weather">
+                                <span class="btn-icon">🌤️</span>
+                                Weather
+                            </button>
+                            <button class="control-btn" data-action="news">
+                                <span class="btn-icon">📰</span>
+                                News
+                            </button>
+                            <button class="control-btn" data-action="music">
+                                <span class="btn-icon">🎵</span>
+                                Music
+                            </button>
+                            <button class="control-btn" data-action="screenshot">
+                                <span class="btn-icon">📸</span>
+                                Screenshot
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-section">
+                        <h3>AI Engine</h3>
+                        <div class="ai-status">
+                            <div class="ai-model-info">
+                                <span class="model-name">DeepSeek-R1</span>
+                                <span class="model-status">Connected</span>
+                            </div>
+                            <div class="ai-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">Response Time</span>
+                                    <span class="metric-value" id="responseTime">0.8s</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Confidence</span>
+                                    <span class="metric-value" id="confidence">98%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="loading-text">Processing...</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
